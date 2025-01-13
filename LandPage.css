@@ -310,3 +310,220 @@ textarea:hover{
   /* color: rgb(58, 225, 116); */
   transform: scale(1.2); 
 }
+
+
+@media (max-width: 576px) {
+    
+  .hero .hero-content h4 {
+      color: rgb(168, 163, 163);
+      font-size: 1rem;
+  }
+
+  .navbar {
+      flex-direction: row;
+  }
+
+  .navbar .logo {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .navbar a {
+      display: block;
+      margin: 5px auto;
+  }
+
+  .hero {
+      height: auto;
+      margin-top: 20px;
+  }
+
+  .hero .hero-content h1 {
+      font-size: 2rem;
+  }
+
+  .content-box {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .box-info {
+      width: 100%;
+  }
+
+  .content-info {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+      align-items: center;
+      gap: 40px;
+  }
+
+  .content-info1,
+  .content-info2 {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .form {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .form-content,
+  .form-info {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .form-info input {
+      width: 100%;
+  }
+
+  .hero .hero-content .btn {
+      padding: 9px 12px;
+      gap: 8px;
+      height: 40px;
+      width: 172px;
+      border: none;
+      background: #ec5e1c;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      /* margin-top: 50px; */
+      color: rgb(252, 253, 254);
+      margin-bottom: 25px;
+  }
+}
+
+/* 2) Small devices (up to 768px) */
+@media (max-width: 768px) {
+
+
+  .navbar a {
+      font-size: 18px;
+  }
+  .navbar .logo{
+    width: 70%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  .hero .hero-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .box-info {
+      width: 300px;
+  }
+  .form {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-form
+ {
+    width: 50%;
+    margin-left: 0;
+}
+
+.contact-form input {
+    width: 100%;
+}
+}
+
+/* 3) Medium devices (up to 992px) */
+@media (max-width: 992px) {
+
+  .content-info1 h3 {
+      font-size: 17px;
+  }
+
+  .content-info1 {
+      width: 45%;
+      border: 2px solid white;
+      background-color: white;
+      line-height: 23px;
+      padding: 30px;
+      margin: 5px;
+  }
+
+  .content-info2 {
+      width: 45%;
+      background-color: #ec5e1c;
+      color: aliceblue;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+  }
+
+  .navbar a {
+      font-size: 18px;
+      margin: 8px;
+  }
+
+  .box-info {
+      width: 350px;
+      margin: 10px;
+  }
+  .form {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .contact-form {
+      width: 50%;
+      margin-left: 0;
+  }
+
+  .contact-form input {
+      width: 100%;
+  }
+
+}
+
+/* 4) Large devices (up to 1200px) */
+@media (min-width:992px) and (max-width: 1200px) {
+  .form {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .contact-form{
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .contact-form input {
+      width: 100%;
+  }
+
+}
+
+/* 5) Extra Large devices (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .form {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .contact-form {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .contact-form input {
+      width: 100%;
+  }
+
+
+  /* You can also scale up font-sizes, widths, etc. here if desired. */
+}
