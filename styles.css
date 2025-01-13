@@ -1,136 +1,120 @@
-*{
-    
+/* ====================================
+   Global / Base Styles (Mobile First)
+====================================== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.navbar{
-    /* border: solid; */
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color:rgb(242, 242, 242)
 
-    
-
-    
-
-}
-.navbar .logo{
-    width: 50%;
+body {
+    /* By default, let's start with RED for super small screens,
+     so that if no media queries match, we see red on the smallest devices. */
+    /* background-color: red; */
    
 
-  
 }
-.navbar .logo img{
-    /* height: 70px;
-    width: 80px; */
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+}
+
+.navbar .logo {
+    width: 50%;
+}
+
+.navbar .logo img {
     margin-left: 40px;
     background-color: aliceblue;
- 
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     padding: 1rem;
-    font-size: 20px;
     margin: 10px;
-  
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: red;
     transition: all 0.5s ease;
     text-decoration: underline;
 }
-/* hero section */
-/* https: //assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg */
 
+/* Hero Section */
 .hero {
-    /* border: solid; */
-        height: 65vh;
-        background-image: url(https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg);
-        background-size: cover;
-        background-position: center;
-        background-position: top;
-        display: flex;
-        margin-top:50px ;
-       
-    
-
+    height: 65vh;
+    background-image: url("https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg");
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    margin-top: 50px;
 }
-.hero .hero-content{
-    
+
+.hero .hero-content {
     height: 100%;
     display: flex;
- flex-direction: column;
- line-height: 60px;
- margin-top: 50px;
- padding-left: 50px;
-
-    
-}
-.hero .hero-content h1{
-    color: rgb(16, 16, 16);
-    font-size: 3rem;
-   
-}
-.hero .hero-content p{
-    color: rgb(44, 43, 43);
-    font-size: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    line-height: 60px;
+    margin-top: 50px;
+    padding-left: 50px;
 }
 
 .hero .hero-content h4 {
     color: rgb(168, 163, 163);
     font-size: 1.5rem;
-   
 }
-.hero .hero-content .btn{
-    /* display: flex; */
-        justify-content: center;
-        align-items:end;
-        padding: 9px 12px;
-        gap: 8px;
-        height: 40px;
-        width: 172px;
-        border: none;
-        background: #ec5e1c;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 20px;
-        margin-top:50px ;
-        color: rgb(252, 253, 254);
-       
-    
+
+.hero .hero-content h1 {
+    color: rgb(16, 16, 16);
+    font-size: 3rem;
 }
-.hero .hero-content .btn:hover{
-    box-shadow: 2px 2px 2px 2px ;
+
+.hero .hero-content p {
+    color: rgb(44, 43, 43);
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.hero .hero-content .btn {
+    padding: 9px 12px;
+    gap: 8px;
+    height: 40px;
+    width: 172px;
+    border: none;
+    background: #ec5e1c;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 50px;
+    color: rgb(252, 253, 254);
+}
+
+.hero .hero-content .btn:hover {
+    box-shadow: 2px 2px 2px 2px;
     background-color: gray;
-    transition:ease-out 1s;
+    transition: ease-out 1s;
 }
-/* main{
- 
-    width: 100%;
-   
-    
-} */
-.content-box{
+
+/* Boxes Section */
+.content-box {
     display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color:rgb(240, 204, 207);
-  padding-left: 80px;
-  padding-right: 80px;
-  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(240, 204, 207);
+    padding-left: 80px;
+    padding-right: 80px;
 }
-.box-info{
+
+.box-info {
     height: 300px;
     width: 400px;
-    /* border: 2px solid black; */
     margin-top: 40px;
     background-color: aliceblue;
     border-radius: 10px;
@@ -139,158 +123,151 @@
     align-items: center;
     padding: 30px;
     margin-bottom: 50px;
-    
 }
-.box-info h2{
+
+.box-info h2 {
     font-size: 60px;
-    color:rgb(240, 204, 207);
-    
+    color: rgb(240, 204, 207);
 }
-.box-info p{
- margin-top: 40px;
- text-align: center;
+
+.box-info p {
+    margin-top: 40px;
+    text-align: center;
 }
-.content-info{
+
+.box-info:hover {
+    box-shadow: 5px 5px 5px 5px;
+    transition: 1s ease-out;
+}
+
+/* Content Info Section */
+.content-info {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding-left: 80px;
     padding-right: 80px;
-    margin-bottom: 50px;
     flex-wrap: wrap;
 }
-.content-info1{
+
+.content-info1 {
     width: 45%;
     border: 2px solid white;
-    background-color:white;
+    background-color: white;
     line-height: 40px;
     padding: 30px;
+    margin: 5px;
 }
-.content-info1 h3{
+
+.content-info1 h3 {
     font-size: 30px;
     font-weight: 600;
-    
-
 }
-.content-info2{
+
+.content-info2 {
     width: 45%;
-    /* border: 2px solid  #ec5e1c; */
     background-color: #ec5e1c;
     color: aliceblue;
     font-size: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-
-    
+    margin: 5px;
 }
-.content-info button{
+
+.content-info2 #content-info2 {
+    margin-top: 50px;
+    font-weight: 900;
+}
+
+.content-info button {
     color: white;
     font-size: 20px;
     border-radius: 20px;
-    border:  rgb(240, 204, 207);;
-    background-color:rgb(240, 204, 207);
+    border: rgb(240, 204, 207);
+    background-color: rgb(240, 204, 207);
     padding: 15px;
     width: 200px;
     margin-top: 20px;
 }
-.content-info2 #content-info2{
-    margin-top: 50px;
-    font-weight:900;
 
-}
-#info1-poster{
-    background-image: url('https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/29fd0360109159e1970d573a/woman-sitting-sofa-with-laptop-legs.jpg');
-    background-size:cover;
-    background-position: center;
-    background-position: top;
+/* Poster Images */
+#info1-poster {
+    background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/29fd0360109159e1970d573a/woman-sitting-sofa-with-laptop-legs.jpg");
+    background-size: cover;
+    background-position: top center;
     height: 300px;
-  
 }
-#info2-poster{
-   background-image: url('	https://assets.nicepagecdn.com/11a8ddce/3502986/images/lovely-woman-using-laptop-office.jpg');
-    background-size:cover;
-    background-position: center;
-    background-position: top;
+
+#info2-poster {
+    background-image: url("https://assets.nicepagecdn.com/11a8ddce/3502986/images/lovely-woman-using-laptop-office.jpg");
+    background-size: cover;
+    background-position: top center;
     height: 300px;
-   
- 
 }
-.content-info1,.content-info2{
-    margin: 5px;
-}
-.form{
+
+/* Form Section */
+.form {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-top: 10px;
-    padding-left:50px ;
-    padding-right: 20px;
-    background-color: rgb(240, 204, 207);
-    background-image: url('https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size:cover;
-    background-position:left;
-    background-position: top;
     margin-left: 20px;
-    
-
+    background-color: rgb(240, 204, 207);
+    background-image: url("https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: left top;
+    padding-left: 50px;
+    padding-right: 20px;
 }
 
-.form::after{
-    background: rgba(0, 0, 0, 0.5);
-}
-.form-content{
+.form-content {
     width: 40%;
     border-radius: 10px;
     padding: 30px;
     margin-top: 50px;
     margin-left: 10px;
-    margin-bottom: 20PX;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 30px;
     background-color: rgba(0, 0, 0, 0.7);
-
- 
-
- 
-
 }
-.form-content-heading{
+
+.form-content-heading {
     font-size: 45px;
     font-weight: 600;
-    display: flex;
     color: white;
-    align-items: center;
     text-decoration: underline;
-    line-height: 5px;
+    /* line-height: 5px; */
     position: relative;
     right: 110px;
 }
-.form-content-button
-{
+
+.form-content-button {
     width: 300px;
     height: 50px;
     padding: 5px;
     font-size: 20px;
-    color:white;
+    color: white;
     background-color: #ec5e1c;
     border-radius: 5px;
     border: #ec5e1c;
     position: relative;
     right: 70px;
 }
-.form-content-para{
+
+.form-content-para {
     font-size: 25px;
     color: white;
     line-height: 30px;
     position: relative;
     left: 40px;
 }
-.form-info{
+
+.form-info {
     width: 40%;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 5px;
     border: rgb(182, 181, 181);
     display: flex;
@@ -300,24 +277,24 @@
     padding: 30px;
     margin-top: 50px;
     margin-left: 10px;
-    margin-bottom: 20PX;
-    
+    margin-bottom: 20px;
 }
-.form-info input{
+
+.form-info input {
     height: 40px;
     width: 490px;
     border-radius: 5px;
-    text-align: left;
     padding: 10px;
-    border: rgb(182,181,181);
-    border-bottom: 2px soild black
+    border: 1px solid #bbb;
 }
-.form-info textarea{
+
+.form-info textarea {
     border-radius: 10px;
-    border: white;
     padding: 30px;
+    border: 1px solid #bbb;
 }
-.form-info button{
+
+.form-info button {
     margin-top: 25px;
     width: 200px;
     height: 40px;
@@ -325,12 +302,219 @@
     position: relative;
     left: 30%;
     background-color: rgb(255, 98, 0);
-    border: 2px solid rgb(255,98,0);
+    border: 2px solid rgb(255, 98, 0);
     color: rgb(246, 241, 241);
     box-shadow: 5px 5px 5px 5px;
-    
 }
-.box-info:hover{
-    box-shadow: 5px 5px 5px 5px;
-    transition: 1s ease-out;
+
+
+/* ==========================================
+   MEDIA QUERIES
+   Breakpoints matching your request:
+   1) (max-width: 576px)
+   2) (max-width: 768px)
+   3) (max-width: 992px)
+   4) (max-width: 1200px)
+   5) (min-width: 1200px)
+========================================== */
+
+/* 1) Extra Small devices (up to 576px) */
+@media (max-width: 576px) {
+    
+    .hero .hero-content h4 {
+        color: rgb(168, 163, 163);
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .hero {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .content-box {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .box-info {
+        width: 100%;
+    }
+
+    .content-info {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .content-info1,
+    .content-info2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .form {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-content,
+    .form-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-info input {
+        width: 100%;
+    }
+
+    .hero .hero-content .btn {
+        padding: 9px 12px;
+        gap: 8px;
+        height: 40px;
+        width: 172px;
+        border: none;
+        background: #ec5e1c;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        /* margin-top: 50px; */
+        color: rgb(252, 253, 254);
+        margin-bottom: 25px;
+    }
+}
+
+/* 2) Small devices (up to 768px) */
+@media (max-width: 768px) {
+
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .box-info {
+        width: 300px;
+    }
+}
+
+/* 3) Medium devices (up to 992px) */
+@media (max-width: 992px) {
+
+    .content-info1 h3 {
+        font-size: 17px;
+    }
+
+    .content-info1 {
+        width: 45%;
+        border: 2px solid white;
+        background-color: white;
+        line-height: 23px;
+        padding: 30px;
+        margin: 5px;
+    }
+
+    .content-info2 {
+        width: 45%;
+        background-color: #ec5e1c;
+        color: aliceblue;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    .box-info {
+        width: 350px;
+        margin: 10px;
+    }
+    .form {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-content,
+    .form-info {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .form-info input {
+        width: 100%;
+    }
+
+}
+
+/* 4) Large devices (up to 1200px) */
+@media (min-width:992px) and (max-width: 1200px) {
+    .form {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-content,
+    .form-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-info input {
+        width: 100%;
+    }
+
+}
+
+/* 5) Extra Large devices (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .form {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .form-content,
+    .form-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-info input {
+        width: 100%;
+    }
+
+
+    /* You can also scale up font-sizes, widths, etc. here if desired. */
 }
